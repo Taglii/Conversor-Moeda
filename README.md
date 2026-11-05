@@ -161,7 +161,7 @@ ConversorMoedas/
 
 ---
 
-## 👨‍💻 Desenvolvido Por
+## 👨‍💻 Desenvolvido Por Matheus Henrique Tagliatti da Silva
 
 Projeto acadêmico desenvolvido para a disciplina de **Desenvolvimento Móvel**.
 
