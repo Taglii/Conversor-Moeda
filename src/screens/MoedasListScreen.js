@@ -319,7 +319,7 @@ const styles = StyleSheet.create({
   },
   listContent: {
     paddingHorizontal: 16,
-    paddingBottom: 24,
+    paddingBottom: 36,
   },
   itemCard: {
     flexDirection: 'row',

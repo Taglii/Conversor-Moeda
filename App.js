@@ -6,6 +6,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { FavoritesProvider } from './src/context/FavoritesContext';
 import HomeScreen from './src/screens/HomeScreen';
@@ -32,6 +33,9 @@ function DrawerMenuButton({ navigation }) {
 
 // Navegador de Abas Inferiores (Bottom Tabs) para a seção Moedas
 function MoedasTabs({ navigation }) {
+  const insets = useSafeAreaInsets();
+  const bottomInset = insets.bottom > 0 ? insets.bottom : 8;
+
   return (
     <Tab.Navigator
       initialRouteName="MoedasTab"
@@ -67,13 +71,14 @@ function MoedasTabs({ navigation }) {
           backgroundColor: '#FFFFFF',
           borderTopColor: '#E2E8F0',
           borderTopWidth: 1,
-          height: 60,
-          paddingBottom: 8,
+          height: 60 + bottomInset,
+          paddingBottom: bottomInset + 4,
           paddingTop: 8,
         },
         tabBarLabelStyle: {
           fontSize: 12,
           fontWeight: '600',
+          marginBottom: 2,
         },
       })}
     >
