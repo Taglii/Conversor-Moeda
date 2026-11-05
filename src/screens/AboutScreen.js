@@ -4,10 +4,10 @@ import {
   Text,
   StyleSheet,
   ScrollView,
-  SafeAreaView,
   TouchableOpacity,
   Linking,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function AboutScreen() {
@@ -33,7 +33,7 @@ export default function AboutScreen() {
           <Text style={styles.appName}>Conversor de Moedas</Text>
           <Text style={styles.appVersion}>Versão 1.0.0</Text>
           <Text style={styles.appTagline}>
-            Aplicativo móvel de câmbio e conversão de moedas mundiais
+            Aplicativo móvel de câmbio e conversão de moedas mundiais desenvolvido por Matheus Tagliatti
           </Text>
         </View>
 

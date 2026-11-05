@@ -7,13 +7,13 @@ import {
   TouchableOpacity,
   ActivityIndicator,
   ScrollView,
-  SafeAreaView,
   Modal,
   FlatList,
   Keyboard,
   TouchableWithoutFeedback,
   Alert,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { convertCurrency, getSupportedCurrencies, getCurrencyName } from '../services/api';
 import { useFavorites } from '../context/FavoritesContext';

@@ -170,4 +170,3 @@ Projeto acadêmico desenvolvido para a disciplina de **Desenvolvimento Móvel**.
 <p align="center">
   Feito com 💙 e React Native.
 </p>
-
